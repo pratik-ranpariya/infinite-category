@@ -1,0 +1,260 @@
+{
+	"id": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+	"name": "task",
+	"description": "",
+	"order": [
+		"9a105ab1-0385-cd16-1f51-3d9bb20fecd6",
+		"8ed3129c-72e5-07ca-9ce0-f7d741ec0f5e",
+		"93fdeff0-eb7b-b737-6c44-053646a3ad19",
+		"f4e6e429-5ca9-0416-363f-0c1e808bd968",
+		"45ead43d-6720-46c4-54ad-15ae3381bb61",
+		"e3d70d41-7984-8cdb-ef30-4b4426d242a0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1623949410334,
+	"owner": "12954641",
+	"public": false,
+	"requests": [
+		{
+			"id": "45ead43d-6720-46c4-54ad-15ae3381bb61",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/productList",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:3000/productList",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1623951155732,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"page\": 1,\n\t\"perPage\": 15,\n\t\"category\":\"Round-neck\"\n}"
+		},
+		{
+			"id": "8ed3129c-72e5-07ca-9ce0-f7d741ec0f5e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/addcategory",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:3000/addcategory",
+			"description": "if you add only name then insert category,\nand you add both name and parant_id then insert subcategory",
+			"descriptionFormat": "html",
+			"time": 1623949484054,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\": \"children\",\n\t\"parant_id\": \"T-shirts\"\n}"
+		},
+		{
+			"id": "93fdeff0-eb7b-b737-6c44-053646a3ad19",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/subCategoryList",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:3000/subCategoryList",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1623949513374,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"parant_id\": \"MEN\"\n}"
+		},
+		{
+			"id": "9a105ab1-0385-cd16-1f51-3d9bb20fecd6",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/insertProduct",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+			"data": [
+				{
+					"key": "images",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "mens tshirt full sleev",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "N/A",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "599",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "Round-neck",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "localhost:3000/insertProduct",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1623949424721,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e3d70d41-7984-8cdb-ef30-4b4426d242a0",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/editProduct",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+			"data": [
+				{
+					"key": "name",
+					"value": "T-shirt for men",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "T-shirts",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "images",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "499",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "localhost:3000/editProduct",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1623953914534,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f4e6e429-5ca9-0416-363f-0c1e808bd968",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/findProduct",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1623951192787,
+			"name": "localhost:3000/findProduct",
+			"description": "",
+			"collectionId": "0f7bad41-2752-b9ad-58f2-cde98ff326b4",
+			"responses": [],
+			"rawModeData": "{\n\t\"slug\": \"hello--wordl-is-goo\"\n}"
+		}
+	]
+}
